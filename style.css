@@ -1,0 +1,12 @@
+
+html, body, #viewDiv {
+    padding:0;
+    margin:0;
+    height:100%;
+  }
+#HomeButton {
+      position: absolute;
+      top: 95px;
+      left: 20px;
+      z-index: 50;
+    }
