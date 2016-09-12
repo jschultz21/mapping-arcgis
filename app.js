@@ -82,8 +82,7 @@ require([
           title: "Coordinates: [" + lon + ", " + lat + "]",
           location: evt.mapPoint // Set the location of the popup to the clicked location
         });
-
-
+        
         // Execute a reverse geocode using the clicked location
         locatorTask.locationToAddress(evt.mapPoint).then(function(response) {
 
@@ -94,11 +93,8 @@ require([
           // If the promise fails and no result is found, print a generic message to the popup's content
           view.popup.content = "No address was found for this location";
         });
-
-
       }
     });
-
   });
 
 
