@@ -59,13 +59,17 @@ require([
   view.on("click", function(evt) {
 
     view.hitTest(evt.screenPoint).then(function(response){
-      if(response.results[0]){
 
+
+      if(response.results[0]){
         view.popup.open({
           // Set the popup's title to the coordinates of the clicked location
-          title: "Blue Raster Office"
-        });
+          title: "Blue Raster Office",
+          location: evt.mapPoint,
+          content: "2200 Wilson Boulevard, Arlington, VA 22201 "
+          });
       }
+
       else {
 
         // Get the coordinates of the click on the view
